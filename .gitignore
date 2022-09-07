@@ -13,6 +13,10 @@ crash.log
 # version control.
 #
 # example.tfvars
+terraform.tfvars
+.terraform.lock.hcl
+.terraform/*
+*.tfstate
 
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
@@ -27,3 +31,16 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
