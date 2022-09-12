@@ -7,6 +7,10 @@ terraform {
   }
 }
 
+provider "render" {
+  api_key = var.render_api_key
+}
+
 resource "render_job" "job" {
   service_id = var.service_id
   start_command = var.start_command

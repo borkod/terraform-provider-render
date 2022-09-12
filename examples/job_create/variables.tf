@@ -1,3 +1,9 @@
+variable "render_api_key" {
+  type = string
+  description = "Render API Key"
+  default = ""
+}
+
 variable "service_id" {
   type    = string
   description = "Value of the service's id attribute"
